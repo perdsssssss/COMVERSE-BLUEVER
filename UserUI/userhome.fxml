@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="602.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserControllers.UserHomeController">
+
+    <children>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="0.0" layoutY="0.0" prefHeight="602.0" prefWidth="990.0" vbarPolicy="AS_NEEDED">
+
+            <content>
+                <AnchorPane prefHeight="1300.0" prefWidth="990.0" style="-fx-background-color: #ffffff;">
+                    <children>
+            
+                        <!-- Header -->
+                        <Pane prefHeight="580.0" prefWidth="990.0" style="-fx-background-color: #376485;">
+                            <children>
+                                <Label layoutX="68.0" layoutY="236.0" prefHeight="49.0" prefWidth="181.0" text="One byte at a time" textFill="WHITE">
+                                    <font>
+                                        <Font name="Montserrat Medium" size="18.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fitHeight="535.0" fitWidth="447.0" layoutX="284.0" layoutY="44.0" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Resources/person1.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="525.0" fitWidth="388.0" layoutX="587.0" layoutY="86.0" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Resources/P2.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="60.0" layoutY="203.0" prefHeight="66.0" prefWidth="197.0" text="Communiverse" textFill="WHITE">
+                                    <font>
+                                        <Font name="Montserrat Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Pane layoutX="85.0" layoutY="308.0" prefHeight="32.0" prefWidth="130.0" style="-fx-background-color: #ffff;">
+                                    <children>
+                                        <Text layoutX="30.0" layoutY="21.0" text="SHOP NOW!">
+                                            <font>
+                                                <Font name="Montserrat SemiBold" size="12.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="43.0" prefWidth="990.0" style="-fx-background-color: #ffff;">
+                           <children>
+                                      <Label fx:id="timelabel" layoutX="824.0" layoutY="4.0" prefHeight="35.0" prefWidth="144.0" textFill="#376485">
+                                          <font>
+                                              <Font name="Montserrat ExtraBold" size="20.0" />
+                                          </font>
+                                      </Label>
+                              <Label fx:id="datelabel" layoutX="667.0" layoutY="6.0" prefHeight="31.0" prefWidth="157.0" textFill="#376485">
+                                 <font>
+                                    <Font name="Montserrat ExtraBold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="datelabel1" layoutX="18.0" layoutY="6.0" prefHeight="31.0" prefWidth="471.0" text="Your next favorite find is just a scroll away!" textFill="#376485">
+                                 <font>
+                                    <Font name="Montserrat Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                            </children>
+                        </Pane>
+
+                        <!-- Collection Labels -->
+                        <Text layoutX="384.0" layoutY="641.0" text="Collections ">
+                            <font>
+                                <Font name="Montserrat Thin" size="40.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="430.0" layoutY="668.0" text="Women | Men ">
+                            <font>
+                                <Font name="Montserrat Thin" size="18.0" />
+                            </font>
+                        </Text>
+
+                        <!-- Product Panes -->
+                        <Pane layoutX="126.0" layoutY="704.0" prefHeight="230.0" prefWidth="262.0" style="-fx-background-color: f1f1f1;">
+                            <children>
+                                <ImageView fitHeight="205.0" fitWidth="197.0" layoutX="34.0" layoutY="13.0" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Resources/SHIRT.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="home" layoutY="2.0" onAction="#shirt" opacity="0.0" prefHeight="230.0" prefWidth="262.0" />
+                            </children>
+                        </Pane>
+
+                        <Pane layoutX="416.0" layoutY="704.0" prefHeight="230.0" prefWidth="241.0" style="-fx-background-color: f1f1f1;">
+                            <children>
+                                <ImageView fitHeight="230.0" fitWidth="242.0" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Resources/CAP.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="home1" layoutY="2.0" onAction="#cap" opacity="0.0" prefHeight="230.0" prefWidth="242.0" />
+                            </children>
+                        </Pane>
+
+                        <Pane layoutX="682.0" layoutY="705.0" prefHeight="537.0" prefWidth="150.0" style="-fx-background-color: f1f1f1;">
+                            <children>
+                                <ImageView fitHeight="538.0" fitWidth="155.0" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Resources/LACE.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="110.0" layoutY="369.0" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Resources/LACE2.png" />
+                                    </image>
+                                </ImageView>
+                                <Button layoutY="2.0" onAction="#lace" opacity="0.0" prefHeight="537.0" prefWidth="150.0" />
+                            </children>
+                        </Pane>
+
+                        <Pane layoutX="126.0" layoutY="1010.0" prefHeight="230.0" prefWidth="262.0" style="-fx-background-color: f1f1f1;">
+                            <children>
+                                <ImageView fitHeight="213.0" fitWidth="230.0" layoutX="25.0" layoutY="9.0" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Resources/JACKET.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="home3" layoutY="2.0" onAction="#jacket" opacity="0.0" prefHeight="230.0" prefWidth="262.0" />
+                            </children>
+                        </Pane>
+
+                        <Pane layoutX="416.0" layoutY="1010.0" prefHeight="230.0" prefWidth="241.0" style="-fx-background-color: f1f1f1;">
+                            <children>
+                                <ImageView fitHeight="230.0" fitWidth="242.0" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Resources/BAG.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="home2" onAction="#bag" opacity="0.0" prefHeight="230.0" prefWidth="242.0" />
+                            </children>
+                        </Pane>
+
+                        <!-- Labels for Products -->
+                        <Label layoutX="130.0" layoutY="940.0" text="Shirt" textFill="#1e1d1d">
+                            <font>
+                                <Font name="Montserrat Light" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="420.0" layoutY="940.0" text="Caps" textFill="#1e1d1d">
+                            <font>
+                                <Font name="Montserrat Light" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="130.0" layoutY="1248.0" text="Jackets" textFill="#1e1d1d">
+                            <font>
+                                <Font name="Montserrat Light" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="420.0" layoutY="1248.0" text="Bags" textFill="#1e1d1d">
+                            <font>
+                                <Font name="Montserrat Light" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="685.0" layoutY="1248.0" text="ID Lace" textFill="#1e1d1d">
+                            <font>
+                                <Font name="Montserrat Light" size="18.0" />
+                            </font>
+                        </Label>
+
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>
