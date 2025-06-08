@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="990.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminController.AdminShippingController">
+   <children>
+      <ImageView fitHeight="609.0" fitWidth="996.0" layoutY="-1.0">
+         <image>
+            <Image url="@../Resources/background%20light.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="32.0" layoutY="24.0" prefHeight="0.0" prefWidth="398.0" text="SHIPPING HISTORY" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="mytable" layoutX="29.0" layoutY="88.0" prefHeight="452.0" prefWidth="932.0" style="-fx-font-family: 'Montserrat'; -fx-selection-bar: #0c274d;">
+         <columns>
+            <TableColumn fx:id="shippingidcol" minWidth="155.33" prefWidth="155.33" style="-fx-alignment: CENTER; -fx-font-family: 'Montserrat';" text="Shipping ID" />
+            <TableColumn fx:id="transactionidcol" minWidth="155.33" prefWidth="155.33" style="-fx-alignment: CENTER; -fx-font-family: 'Montserrat';" text="Transaction ID" />
+            <TableColumn fx:id="studentnumbercol" minWidth="155.33" prefWidth="155.33" style="-fx-alignment: CENTER; -fx-font-family: 'Montserrat';" text="Student Number" />
+            <TableColumn fx:id="shippingmethodcol" minWidth="155.33" prefWidth="155.33" style="-fx-alignment: CENTER; -fx-font-family: 'Montserrat';" text="Shipping Method" />
+            <TableColumn fx:id="shippingaddresscol" minWidth="155.33" prefWidth="155.33" style="-fx-alignment: CENTER; -fx-font-family: 'Montserrat';" text="Shipping Address" />
+            <TableColumn fx:id="shippingamountcol" minWidth="155.33" prefWidth="155.33" style="-fx-alignment: CENTER; -fx-font-family: 'Montserrat';" text="Shipping Amount" />
+         </columns>
+      </TableView>
+      <Button fx:id="deletehistorybtn" layoutX="29.0" layoutY="549.0" prefHeight="30.0" prefWidth="932.0" style="-fx-border-color: #0c274d; -fx-background-color: #ffffff; -fx-font-family: 'Montserrat';" text="DELETE HISTORY" textFill="#0c274d">
+         <font>
+            <Font name="Montserrat Regular" size="10.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="929.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/search%20icon.png" />
+         </image>
+      </ImageView>
+      <TextField id="fnameTextfield" fx:id="searchField" layoutX="632.0" layoutY="31.0" minHeight="-Infinity" prefHeight="30.0" prefWidth="289.0" promptText="Search">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
