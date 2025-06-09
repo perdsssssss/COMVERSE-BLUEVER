@@ -8,80 +8,75 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="615.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.StartController">
+<AnchorPane prefHeight="532.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.StartController">
    <children>
-      <ImageView fitHeight="236.0" fitWidth="908.0" layoutX="-6.0" layoutY="-5.0">
+      <ImageView fitHeight="541.0" fitWidth="945.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/Alvhin/Downloads/code.jpg" />
+            <Image url="@../Resources/start.gif" />
          </image>
       </ImageView>
-      <Pane layoutY="193.0" prefHeight="422.0" prefWidth="908.0" style="-fx-background-color: #165834; -fx-background-radius: 35;">
-         <children>
-            <Pane layoutY="325.0" prefHeight="101.0" prefWidth="908.0" style="-fx-background-color: #165834;" />
-            <ImageView fitHeight="412.0" fitWidth="694.0" layoutX="105.0">
-               <image>
-                  <Image url="@../../../../Downloads/start.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="216.0" fitWidth="341.0" layoutX="444.0" layoutY="112.0">
-               <image>
-                  <Image url="@../../../../Downloads/icon2.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="216.0" fitWidth="351.0" layoutX="115.0" layoutY="103.0">
-               <image>
-                  <Image url="@../../../../Downloads/icon%20(2).png" />
-               </image>
-            </ImageView>
-            <Text fill="#165834" layoutX="174.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER" textAlignment="CENTER" wrappingWidth="241.0">
-               <font>
-                  <Font name="Rockwell Bold" size="32.0" />
-               </font>
-            </Text>
-            <Text fill="#165834" layoutX="492.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN" textAlignment="CENTER" wrappingWidth="249.0">
-               <font>
-                  <Font name="Rockwell Bold" size="32.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="259.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Comverse! Your Source Code for Swag!" textAlignment="CENTER" wrappingWidth="413.4">
-               <font>
-                  <Font name="Rockwell Bold" size="16.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="326.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User or Admin? The Console is Yours." textAlignment="CENTER" wrappingWidth="255.0">
-               <font>
-                  <Font name="Rockwell Bold" size="13.0" />
-               </font>
-            </Text>
-            <Button fx:id="userButtonHandler" layoutX="170.0" layoutY="75.0" mnemonicParsing="false" onAction="#userButtonHandler" prefHeight="328.0" prefWidth="241.0" style="-fx-border-radius: 100; -fx-background-color: transparent;" textFill="WHITE">
-               <font>
-                  <Font size="55.0" />
-               </font>
-            </Button>
-            <Button fx:id="adminButtonHandler" layoutX="488.0" layoutY="78.0" mnemonicParsing="false" onAction="#adminButtonHandler" prefHeight="328.0" prefWidth="249.0" style="-fx-background-color: transparent;" text="Admin" textFill="#ffffff00">
-               <font>
-                  <Font size="55.0" />
-               </font>
-            </Button>
-         </children>
-      </Pane>
-      <ImageView fitHeight="75.0" fitWidth="80.0" layoutX="201.0" layoutY="66.0">
+      <ImageView fitHeight="75.0" fitWidth="80.0" layoutX="188.0" layoutY="51.0" nodeOrientation="RIGHT_TO_LEFT">
          <image>
-            <Image url="@../../../../Downloads/LOGO%20(2).png" />
+            <Image url="@../Resources/blueplainlogo.png" />
          </image>
       </ImageView>
-      <Text fill="#165834" layoutX="260.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMVERSE" wrappingWidth="458.1">
+      <Text fill="#1c2c44" layoutX="247.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMVERSE" wrappingWidth="458.1">
          <font>
-            <Font name="Rockwell Bold" size="75.0" />
+            <Font name="Montserrat Black" size="72.0" />
          </font>
       </Text>
-      <Text fill="#165834" layoutX="505.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Merge Fashion with Function" textAlignment="CENTER" wrappingWidth="200.6000366210937">
+      <Text fill="#1c2c44" layoutX="486.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Merge Fashion with Function" textAlignment="CENTER" wrappingWidth="200.6000366210937">
          <font>
-            <Font name="Rockwell Bold" size="13.0" />
+            <Font name="Montserrat Medium" size="13.0" />
          </font>
       </Text>
-      <Pane layoutX="25.0" layoutY="23.0" prefHeight="16.0" prefWidth="16.0" style="-fx-background-color: #45a343; -fx-background-radius: 100;" />
-      <Pane layoutX="52.0" layoutY="23.0" prefHeight="16.0" prefWidth="16.0" style="-fx-background-color: #0c8000; -fx-background-radius: 100;" />
-      <Pane layoutX="79.0" layoutY="23.0" prefHeight="16.0" prefWidth="16.0" style="-fx-background-color: #099901; -fx-background-radius: 100;" />
+      <Pane layoutX="27.0" layoutY="29.0" prefHeight="16.0" prefWidth="16.0" style="-fx-background-color: #6ea3ca; -fx-background-radius: 100;" />
+      <Pane layoutX="54.0" layoutY="29.0" prefHeight="16.0" prefWidth="16.0" style="-fx-background-color: #1c2c44; -fx-background-radius: 100;" />
+      <Pane layoutX="81.0" layoutY="29.0" prefHeight="16.0" prefWidth="16.0" style="-fx-background-color: #6ea3ca; -fx-background-radius: 100;" />
+      <ImageView fitHeight="289.0" fitWidth="353.0" layoutX="149.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="289.0" fitWidth="268.0" layoutX="535.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/admin.png" />
+         </image>
+      </ImageView>
+      <Text fill="#1c2c44" layoutX="300.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Comverse! Your Source Code for Swag!" textAlignment="CENTER" wrappingWidth="370.99999999999994">
+         <font>
+            <Font name="Montserrat Medium Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#1c2c44" layoutX="300.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User or Admin? The Console is Yours." textAlignment="CENTER" wrappingWidth="370.99999999999994">
+         <font>
+            <Font name="Montserrat Medium" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#1c2c44" layoutX="240.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER" textAlignment="CENTER" wrappingWidth="86.89997253417971">
+         <font>
+            <Font name="Montserrat Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text fill="#1c2c44" layoutX="614.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN" textAlignment="CENTER" wrappingWidth="109.29993591308596">
+         <font>
+            <Font name="Montserrat Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text fill="#1c2c44" layoutX="723.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EST. 2025  | COMMUNIVERSE" textAlignment="CENTER" wrappingWidth="207.80004882812494">
+         <font>
+            <Font name="Montserrat Light" size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="userButtonHandler" layoutX="154.0" layoutY="226.0" mnemonicParsing="false" onAction="#userButtonHandler" prefHeight="246.0" prefWidth="254.0" style="-fx-border-radius: 100; -fx-background-color: transparent;" textFill="WHITE">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Button>
+      <Button fx:id="adminButtonHandler" layoutX="541.0" layoutY="226.0" mnemonicParsing="false" onAction="#adminButtonHandler" prefHeight="246.0" prefWidth="254.0" style="-fx-background-color: transparent;" text="Admin" textFill="#ffffff00">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
