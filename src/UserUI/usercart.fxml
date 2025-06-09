@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="602.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserControllers.UserCartController">
+   <children>
+      <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="0.0" layoutY="0.0" prefHeight="602.0" prefWidth="990.0" vbarPolicy="AS_NEEDED">
+         <content>
+            <AnchorPane prefHeight="1195.0" prefWidth="990.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Pane prefHeight="582.0" prefWidth="990.0" style="-fx-background-color: #376485;">
+                     <children>
+                        <ImageView fitHeight="500.0" fitWidth="540.0" layoutX="245.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Resources/sale.gif" />
+                           </image>
+                        </ImageView>
+                        <Pane prefHeight="43.0" prefWidth="990.0" style="-fx-background-color: #ffff;">
+                           <children>
+                              <Label fx:id="timelabel" layoutX="824.0" layoutY="4.0" prefHeight="35.0" prefWidth="144.0" textFill="#376485">
+                                 <font>
+                                    <Font name="Montserrat ExtraBold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="datelabel" layoutX="667.0" layoutY="6.0" prefHeight="31.0" prefWidth="157.0" textFill="#376485">
+                                 <font>
+                                    <Font name="Montserrat ExtraBold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="datelabel1" layoutX="24.0" layoutY="6.0" prefHeight="31.0" prefWidth="471.0" text="Your cart awaits, complete your perfect look!" textFill="#376485">
+                                 <font>
+                                    <Font name="Montserrat Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  
+                  <Text layoutX="438.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cart" textAlignment="CENTER" wrappingWidth="114.39995727539065">
+                     <font>
+                        <Font name="Montserrat Thin" size="40.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="cartTable" layoutX="55.0" layoutY="670.0" prefHeight="450.0" prefWidth="880.0" style="-fx-background-color: #ffffff; -fx-font-family: 'Montserrat'; -fx-selection-bar: #376485;">
+                     <columns>
+                        <TableColumn fx:id="selectcol" minWidth="60.0" prefWidth="60.0" style="-fx-font-family: 'Montserrat'; -fx-alignment: CENTER;" text="Select" />
+                        <TableColumn fx:id="productimagecol" minWidth="205.0" prefWidth="205.0" style="-fx-font-family: 'Montserrat'; -fx-alignment: CENTER;" text="Product Image" />
+                        <TableColumn fx:id="productnamecol" minWidth="205.0" prefWidth="205.0" style="-fx-font-family: 'Montserrat'; -fx-alignment: CENTER;" text="Product Name" />
+                        <TableColumn fx:id="pricecol" minWidth="205.0" prefWidth="205.0" style="-fx-font-family: 'Montserrat'; -fx-alignment: CENTER;" text="Price" />
+                        <TableColumn fx:id="quantitycol" minWidth="205.0" prefWidth="205.0" style="-fx-font-family: 'Montserrat'; -fx-alignment: CENTER;" text="Quantity" />
+                     </columns>
+                  </TableView>
+                  <Text layoutX="60.0" layoutY="1160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subtotal:" wrappingWidth="110.39993896484373">
+                     <font>
+                        <Font name="Montserrat Thin" size="24.0" />
+                     </font>
+                  </Text>
+                  
+                  <TextField fx:id="subtotalTextfield" layoutX="170.0" layoutY="1134.0" prefHeight="33.0" prefWidth="422.0">
+                     <font>
+                        <Font name="Montserrat Regular" size="12.0" />
+                     </font></TextField>
+                  
+                  <ImageView fitHeight="49.0" fitWidth="150.0" layoutX="615.0" layoutY="1125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/deleteicon.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="deletebtn" layoutX="615.0" layoutY="1129.0" mnemonicParsing="false" onAction="#handleDeleteSelected" opacity="0.0" prefHeight="41.0" prefWidth="146.0" text="DELETE" />
+                  
+                  <ImageView fitHeight="61.0" fitWidth="171.0" layoutX="770.0" layoutY="1121.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/checkouticon.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="checkoutbtn" layoutX="770.0" layoutY="1119.0" mnemonicParsing="false" onAction="#handleCheckout" opacity="0.0" prefHeight="50.0" prefWidth="163.0" text="CHECK OUT" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

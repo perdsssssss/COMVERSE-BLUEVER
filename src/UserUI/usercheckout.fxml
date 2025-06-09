@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="602.0" prefWidth="990.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserControllers.UserCheckoutController">
+   <children>
+      <!-- White Header with Quote -->
+      <Pane prefHeight="43.0" prefWidth="990.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="timelabel" layoutX="824.0" layoutY="4.0" prefHeight="35.0" prefWidth="144.0" textFill="#376485">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="datelabel" layoutX="667.0" layoutY="6.0" prefHeight="31.0" prefWidth="157.0" textFill="#376485">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="6.0" prefHeight="31.0" prefWidth="471.0" text="Complete your purchase with confidence and ease!" textFill="#376485">
+               <font>
+                  <Font name="Montserrat Italic" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+
+      <!-- Header Section -->
+      <Pane layoutY="43.0" prefHeight="60.0" prefWidth="990.0" style="-fx-background-color: #376485;">
+         <children>
+            <!-- Logo -->
+            <ImageView fitHeight="57.0" fitWidth="56.0" layoutX="40.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bluelogo.png" />
+               </image>
+            </ImageView>
+            
+            <!-- Title -->
+            <Text fill="WHITE" layoutX="388.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHECKOUT" textAlignment="CENTER">
+               <font>
+                  <Font name="Montserrat Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Progress Indicator -->
+      <Pane layoutX="95.0" layoutY="117.0" prefHeight="66.0" prefWidth="800.0" style="-fx-background-color: #f8f9fa; -fx-background-radius: 10;">
+         <children>
+            <!-- Progress Steps Image -->
+            <ImageView fitHeight="60.0" fitWidth="600.0" layoutX="238.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/deliveryicon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+
+      <!-- Main Content Container -->
+      <Pane layoutX="95.0" layoutY="190.0" prefHeight="280.0" prefWidth="800.0" style="-fx-background-color: #f8f9fa; -fx-background-radius: 10;">
+         <children>
+
+            <!-- Payment Image -->
+            <ImageView fitHeight="183.0" fitWidth="566.0" layoutX="186.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/paymentt.png" />
+               </image>
+            </ImageView>
+            <!-- Shipping Details Section -->
+            <Text fill="#333d4f" layoutX="30.0" layoutY="30.0" text="Shipping Details">
+               <font>
+                  <Font name="Montserrat Bold" size="18.0" />
+               </font>
+            </Text>
+            
+            <!-- Shipping Method -->
+            <Label layoutX="30.0" layoutY="60.0" text="Shipping Method:" textFill="#333d4f">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="smethodfield" layoutX="180.0" layoutY="57.0" prefHeight="25.0" prefWidth="560.0" promptText="Flash Express" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Montserrat Regular" size="12.0" />
+               </font>
+            </TextField>
+
+            <!-- Shipping Address -->
+            <Label layoutX="30.0" layoutY="100.0" text="Shipping Address:" textFill="#333d4f">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="shippingaddress" layoutX="180.0" layoutY="97.0" prefHeight="25.0" prefWidth="560.0" promptText="551 MF Jhocson St. Sampaloc, Manila, PH" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Montserrat Regular" size="12.0" />
+               </font>
+            </TextField>
+
+            <!-- Shipping Amount -->
+            <Label layoutX="30.0" layoutY="140.0" text="Shipping Amount:" textFill="#333d4f">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="samountfield" layoutX="180.0" layoutY="137.0" prefHeight="25.0" prefWidth="560.0" promptText="₱50.00" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Montserrat Regular" size="12.0" />
+               </font>
+            </TextField>
+
+            <!-- Payment Method -->
+            <Label layoutX="30.0" layoutY="180.0" text="Payment Method:" textFill="#333d4f">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="paymentmethod" layoutX="180.0" layoutY="177.0" prefHeight="25.0" prefWidth="560.0" promptText="Select payment method" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-font-family: 'Montserrat';" />
+         </children>
+      </Pane>
+
+      <!-- Order Summary Section -->
+      <Pane layoutX="95.0" layoutY="479.0" prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: #e8f5e8; -fx-background-radius: 10; -fx-border-color: #165834; -fx-border-radius: 10; -fx-border-width: 2;">
+         <children>
+            <Label layoutX="30.0" layoutY="20.0" text="Total Amount:" textFill="#165834">
+               <font>
+                  <Font name="Montserrat Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="totalamountfield" layoutX="160.0" layoutY="17.0" prefHeight="25.0" prefWidth="200.0" promptText="₱5,000.00" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #165834; -fx-border-radius: 5; -fx-border-width: 1;">
+               <font>
+                  <Font name="Montserrat Bold" size="14.0" />
+               </font>
+            </TextField>
+            
+            <!-- Terms and Conditions -->
+            <Label layoutX="458.0" layoutY="24.0" text="Make sure that all your details are correct." textFill="#666">
+               <font>
+                  <Font name="Montserrat Light Italic" size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="addtocartbtn1" layoutX="688.0" layoutY="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #666; -fx-background-radius: 3;" text="I Understand" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Bold" size="8.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+
+      <!-- Place Order Button -->
+      <Button fx:id="addtocartbtn" layoutX="95.0" layoutY="549.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="800.0" style="-fx-background-color: #376485; -fx-background-radius: 10;" text="PLACE ORDER" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Bold" size="16.0" />
+         </font>
+      </Button>
+
+   </children>
+</AnchorPane>

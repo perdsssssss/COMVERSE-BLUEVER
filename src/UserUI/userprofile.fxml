@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="602.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserControllers.UserProfileController">
+    <children>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="0.0" layoutY="0.0" prefHeight="602.0" prefWidth="990.0" vbarPolicy="AS_NEEDED">
+            <content>
+                <AnchorPane prefHeight="1200.0" prefWidth="990.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        
+                        <!-- Header Section -->
+                        <Pane prefHeight="580.0" prefWidth="990.0" style="-fx-background-color: #376485;">
+                            <children>
+                                <!-- Top bar with dynamic content -->
+                                <Pane prefHeight="43.0" prefWidth="990.0" style="-fx-background-color: #ffffff;">
+                                    <children>
+                                        <Label fx:id="timelabel" layoutX="824.0" layoutY="4.0" prefHeight="35.0" prefWidth="144.0" textFill="#376485">
+                                            <font>
+                                                <Font name="Montserrat ExtraBold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="datelabel" layoutX="667.0" layoutY="6.0" prefHeight="31.0" prefWidth="157.0" textFill="#376485">
+                                            <font>
+                                                <Font name="Montserrat ExtraBold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="18.0" layoutY="6.0" prefHeight="31.0" prefWidth="471.0" text="Manage your profile and view your orders!" textFill="#376485">
+                                            <font>
+                                                <Font name="Montserrat Italic" size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                                
+                                <!-- Fashion GIF -->
+                                <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="350.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@fashion.gif" />
+                                    </image>
+                                </ImageView>
+      
+                              <!-- Profile Information Section -->
+                              <Text fill="WHITE" layoutX="361.0" layoutY="118.0" text="Profile Details">
+                                  <font>
+                                      <Font name="Montserrat Thin" size="40.0" />
+                                  </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="402.0" layoutY="145.0" text="Personal Information">
+                                  <font>
+                                      <Font name="Montserrat Thin" size="18.0" />
+                                  </font>
+                              </Text>
+      
+                              <!-- Profile Form Container -->
+                              <Pane layoutX="126.0" layoutY="191.0" prefHeight="280.0" prefWidth="738.0" style="-fx-background-color: #f8f9fa; -fx-background-radius: 10;">
+                                  <children>
+                                      <!-- Row 1: Student ID and First Name -->
+                                      <Label layoutX="40.0" layoutY="35.0" prefHeight="18.0" prefWidth="86.0" text="Student ID:" textFill="#203450">
+                                          <font>
+                                              <Font name="Montserrat Bold" size="12.0" />
+                                          </font>
+                                      </Label>
+                                      <TextField fx:id="IDTextfield" layoutX="150.0" layoutY="32.0" prefHeight="25.0" prefWidth="200.0" promptText="AAP-XXX" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5;">
+                                          <font>
+                                              <Font name="Montserrat Regular" size="12.0" />
+                                          </font>
+                                      </TextField>
+                                      
+                                      <Label layoutX="390.0" layoutY="35.0" prefHeight="18.0" prefWidth="86.0" text="First Name:" textFill="#203450">
+                                          <font>
+                                              <Font name="Montserrat Bold" size="12.0" />
+                                          </font>
+                                      </Label>
+                                      <TextField fx:id="fnameTextfield" layoutX="490.0" layoutY="32.0" prefHeight="25.0" prefWidth="200.0" promptText="Junhui" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5;">
+                                          <font>
+                                              <Font name="Montserrat Regular" size="12.0" />
+                                          </font>
+                                      </TextField>
+      
+                                      <!-- Row 2: Last Name and Email -->
+                                      <Label layoutX="40.0" layoutY="85.0" prefHeight="18.0" prefWidth="86.0" text="Last Name:" textFill="#203450">
+                                          <font>
+                                              <Font name="Montserrat Bold" size="12.0" />
+                                          </font>
+                                      </Label>
+                                      <TextField fx:id="lnameTextfield" layoutX="150.0" layoutY="82.0" prefHeight="25.0" prefWidth="200.0" promptText="Moon" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5;">
+                                          <font>
+                                              <Font name="Montserrat Regular" size="12.0" />
+                                          </font>
+                                      </TextField>
+                                      
+                                      <Label layoutX="390.0" layoutY="85.0" prefHeight="18.0" prefWidth="86.0" text="Email:" textFill="#203450">
+                                          <font>
+                                              <Font name="Montserrat Bold" size="12.0" />
+                                          </font>
+                                      </Label>
+                                      <TextField fx:id="emailTextField" layoutX="490.0" layoutY="82.0" prefHeight="25.0" prefWidth="200.0" promptText="junmoon@gmail.com" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5;">
+                                          <font>
+                                              <Font name="Montserrat Regular" size="12.0" />
+                                          </font>
+                                      </TextField>
+      
+                                      <!-- Row 3: Password and Department -->
+                                      <Label layoutX="40.0" layoutY="135.0" prefHeight="18.0" prefWidth="86.0" text="Password:" textFill="#203450">
+                                          <font>
+                                              <Font name="Montserrat Bold" size="12.0" />
+                                          </font>
+                                      </Label>
+                                      <TextField fx:id="passwordTextfield" layoutX="150.0" layoutY="132.0" prefHeight="25.0" prefWidth="200.0" promptText="●●●●●●●●" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5;">
+                                          <font>
+                                              <Font name="Rockwell" size="12.0" />
+                                          </font>
+                                      </TextField>
+                                      
+                                      <Label layoutX="390.0" layoutY="135.0" prefHeight="18.0" prefWidth="86.0" text="Department:" textFill="#203450">
+                                          <font>
+                                              <Font name="Montserrat Bold" size="12.0" />
+                                          </font>
+                                      </Label>
+                                      <ComboBox fx:id="deptcombobox" layoutX="490.0" layoutY="132.0" prefHeight="25.0" prefWidth="200.0" promptText="College of Allied Health" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-font-family: 'Montserrat'; -fx-border-radius: 5;" />
+      
+                                      <!-- Row 4: Course -->
+                                      <Label layoutX="40.0" layoutY="185.0" prefHeight="18.0" prefWidth="86.0" text="Course:" textFill="#203450">
+                                          <font>
+                                              <Font name="Montserrat Bold" size="12.0" />
+                                          </font>
+                                      </Label>
+                                      <ComboBox fx:id="coursecombobox" layoutX="150.0" layoutY="182.0" prefHeight="27.0" prefWidth="541.0" promptText="Bachelor of Science in Nursing" style="-fx-background-radius: 5; -fx-border-color: #ddd; -fx-border-radius: 5; -fx-font-family: 'Montserrat';" />
+      
+                                      <!-- Edit Button -->
+                                      <Button fx:id="editbtn" layoutX="580.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleEditButton" prefHeight="32.0" prefWidth="110.0" style="-fx-background-color: #376485; -fx-background-radius: 5;" text="Edit Profile" textFill="WHITE">
+                                          <font>
+                                              <Font name="Montserrat Bold" size="12.0" />
+                                          </font>
+                                      </Button>
+                                  </children>
+                              </Pane>
+                            </children>
+                        </Pane>
+
+                        <!-- Orders Section -->
+                        <Text layoutX="380.0" layoutY="646.0" text="My Orders">
+                            <font>
+                                <Font name="Montserrat Thin" size="40.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="397.0" layoutY="673.0" text="Transaction History">
+                            <font>
+                                <Font name="Montserrat Thin" size="18.0" />
+                            </font>
+                        </Text>
+
+                        <!-- Orders Table Container -->
+                        <Pane layoutX="95.0" layoutY="705.0" prefHeight="460.0" prefWidth="800.0" style="-fx-background-color: #f8f9fa; -fx-background-radius: 10;">
+                            <children>
+                                <TableView fx:id="ordersTable" layoutX="20.0" layoutY="20.0" prefHeight="420.0" prefWidth="760.0" style="-fx-font-family: 'Montserrat'; -fx-selection-bar: #376485; -fx-background-radius: 5;">
+                                    <columns>
+                                        <TableColumn fx:id="transactionIdCol" prefWidth="126.67" style="-fx-alignment: CENTER; -fx-font-family: 'Montserrat';" text="Transaction ID" />
+                                        <TableColumn fx:id="productIdCol" prefWidth="126.67" style="-fx-alignment: CENTER; -fx-font-family: 'Montserrat';" text="Product ID" />
+                                        <TableColumn fx:id="imageUrlCol" prefWidth="126.67" style="-fx-alignment: CENTER; -fx-font-family: 'Montserrat';" text="Product Image" />
+                                        <TableColumn fx:id="orderDateCol" prefWidth="126.67" style="-fx-alignment: CENTER; -fx-font-family: 'Montserrat';" text="Order Date" />
+                                        <TableColumn fx:id="quantityCol" prefWidth="126.67" style="-fx-alignment: CENTER; -fx-font-family: 'Montserrat';" text="Quantity" />
+                                        <TableColumn fx:id="totalAmountCol" prefWidth="126.65" style="-fx-alignment: CENTER;" text="Total Amount" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </Pane>
+                        <Text layoutX="200.0" layoutY="1185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You will receive your order after three (3) days after your order date then you can mark that as received.">
+                            <font>
+                                <Font name="Montserrat Light" size="12.0" />
+                            </font>
+                        </Text>
+                  <Button fx:id="deleteBtn" layoutX="764.0" layoutY="662.0" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="30.0" prefWidth="131.0" style="-fx-background-color: #376485;" text="Marked as Received" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Bold" size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelBtn" layoutX="95.0" layoutY="662.0" mnemonicParsing="false" onAction="#handleCancelOrderButton" prefHeight="30.0" prefWidth="131.0" style="-fx-background-color: #376485;" text="Cancel Order" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Bold" size="10.0" />
+                     </font>
+                  </Button>
+
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

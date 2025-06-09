@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminController.AdminUserController">
+   <children>
+      <ImageView fitHeight="608.0" fitWidth="996.0" layoutX="-3.0" layoutY="-2.0">
+         <image>
+            <Image url="@../Resources/bg.png" />
+         </image>
+      </ImageView>
+
+      <Label layoutX="32.0" layoutY="24.0" prefHeight="0.0" prefWidth="131.0" text="USER" textFill="#376485">
+         <font>
+            <Font name="Montserrat Bold" size="36.0" />
+         </font>
+      </Label>
+
+      <TableView fx:id="mytable" layoutX="341.0" layoutY="86.0" prefHeight="494.0" prefWidth="621.0" style="-fx-background-color: #ffffff; -fx-font-family: 'Montserrat'; -fx-selection-bar: #376485;">
+         <columns>
+            <TableColumn fx:id="studnumcol" prefWidth="120.0" style="-fx-font-family: 'Montserrat'; -fx-alignment: CENTER-LEFT;" text="Student Number" />
+            <TableColumn fx:id="fnamecol" prefWidth="111.5" style="-fx-font-family: 'Montserrat'; -fx-alignment: CENTER-LEFT;" text="First Name" />
+            <TableColumn fx:id="lnamecol" prefWidth="117.0" style="-fx-font-family: 'Montserrat'; -fx-alignment: CENTER-LEFT;" text="Last Name" />
+            <TableColumn fx:id="emailcol" prefWidth="99.0" style="-fx-font-family: 'Montserrat'; -fx-alignment: CENTER-LEFT;" text="Email" />
+            <TableColumn fx:id="passwordcol" prefWidth="125.0" style="-fx-font-family: 'Montserrat'; -fx-alignment: CENTER-LEFT;" text="Password" />
+            <TableColumn fx:id="coursecol" prefWidth="160.0" style="-fx-font-family: 'Montserrat'; -fx-alignment: CENTER-LEFT;" text="Course" />
+            <TableColumn fx:id="departmentcol" prefWidth="160.0" style="-fx-font-family: 'Montserrat'; -fx-alignment: CENTER-LEFT;" text="Department" />
+         </columns>
+      </TableView>
+
+      <Label layoutX="29.0" layoutY="168.0" style="-fx-font-family: 'Montserrat';" text="First Name:" textFill="#0c274d">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="200.0" style="-fx-font-family: 'Montserrat';" text="Last Name:" textFill="#0c274d">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="234.0" style="-fx-font-family: 'Montserrat';" text="Email:" textFill="#0c274d">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="271.0" style="-fx-font-family: 'Montserrat';" text="Password:" textFill="#0c274d">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="334.0" prefHeight="16.0" prefWidth="70.0" style="-fx-font-family: 'Montserrat';" text="Course:" textFill="#0c274d">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="302.0" style="-fx-font-family: 'Montserrat';" text="Department:" textFill="#0c274d">
+         <font>
+            <Font name="Rockwell" size="12.0" />
+         </font>
+      </Label>
+
+      <Button fx:id="addcustomerbtn" layoutX="29.0" layoutY="382.0" onAction="#handleAddUser" prefHeight="30.0" prefWidth="298.0" style="-fx-border-color: #0c274d; -fx-background-color: #ffffff; -fx-font-family: 'Montserrat';" text="ADD CUSTOMER" textFill="#0c274d">
+         <font>
+            <Font name="Rockwell" size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="deletecustomerbtn" layoutX="29.0" layoutY="419.0" onAction="#handleDeleteUser" prefHeight="30.0" prefWidth="298.0" style="-fx-border-color: #0c274d; -fx-background-color: #ffffff; -fx-font-family: 'Montserrat';" text="DELETE CUSTOMER" textFill="#0c274d">
+         <font>
+            <Font name="Rockwell" size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="updatecustomerbtn" layoutX="29.0" layoutY="457.0" onAction="#handleUpdateUser" prefHeight="30.0" prefWidth="298.0" style="-fx-border-color: #0c274d; -fx-background-color: #ffffff; -fx-font-family: 'Montserrat';" text="UPDATE CUSTOMER" textFill="#0c274d">
+         <font>
+            <Font name="Rockwell" size="9.0" />
+         </font>
+      </Button>
+
+      <TextField fx:id="fnameTextField" layoutX="131.0" layoutY="164.0" prefHeight="23.0" prefWidth="197.0" promptText="Amelia Mignonette" style="-fx-font-family: 'Montserrat';">
+         <font>
+            <Font name="Rockwell" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lnameTextField" layoutX="131.0" layoutY="196.0" prefHeight="23.0" prefWidth="198.0" promptText="Thermopolis" style="-fx-font-family: 'Montserrat';">
+         <font>
+            <Font name="Rockwell" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailTextField" layoutX="131.0" layoutY="230.0" prefHeight="23.0" prefWidth="198.0" promptText="mia_thermopolis@gmail.com" style="-fx-font-family: 'Montserrat';">
+         <font>
+            <Font name="Rockwell" size="11.0" />
+         </font>
+      </TextField>
+
+      <Button layoutX="799.0" layoutY="47.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="31.0" />
+
+      <ComboBox fx:id="coursecombobox" layoutX="131.0" layoutY="334.0" prefHeight="26.0" prefWidth="198.0" style="-fx-font-family: 'Montserrat';" />
+      <ComboBox fx:id="deptcombobox" layoutX="131.0" layoutY="297.0" prefHeight="26.0" prefWidth="198.0" style="-fx-font-family: 'Montserrat';" />
+
+      <TextField id="fnameTextfield" fx:id="searchField" layoutX="632.0" layoutY="31.0" minHeight="-Infinity" prefHeight="30.0" prefWidth="290.0" promptText="Search" style="-fx-font-family: 'Montserrat';">
+         <font>
+            <Font name="Montserrat Regular" size="11.0" />
+         </font>
+      </TextField>
+
+      <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="929.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/search%20icon.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="pTextField" layoutX="131.0" layoutY="262.0" prefHeight="26.0" prefWidth="198.0" promptText="●●●●●●●●">
+         <font>
+            <Font size="9.0" />
+         </font></PasswordField>
+   </children>
+</AnchorPane>
