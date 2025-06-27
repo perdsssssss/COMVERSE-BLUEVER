@@ -6,7 +6,7 @@
 
 Rather than focusing on user interface design or front-end development, COMVERSE highlights the backend—the database that powers the system. Utilizing **MySQL** as its core database engine, the main objective of this project is to design and implement a well-structured relational database capable of managing:
 
-- **Inventory**: Keep track of products available for purchase.
+- **Inventory**: Keep track of products available for purchase. 
 - **User Accounts**: Manage user registrations, profiles, and authentication.
 - **Purchase Transactions**: Handle the buying process, ensuring accuracy and reliability.
 
